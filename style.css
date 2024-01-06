@@ -1,35 +1,39 @@
-.Juris{
-    padding-top: 50px;
-    padding-inline: 30px;
-    padding-bottom: 50px;
-    font-size: 28px;
-}
-.Author{
-
-}
-header{
-}
-nav li{
-    font-size: large;
-    display: inline-block;
-}
-nav ul{
-    list-style-type:upper-latin;
-    padding-top:10px;
-    padding-bottom:100px;
-}
-nav a{
-    padding: 10px;
-}
-.content{
-    float: left;SS
-    margin-left: 200px;
-    font-size: 20px;
-    padding-top: 40px;  
-}
-body{
-    color: #B0BFD2;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;   
-}
+    .Juris{
+        padding-top: 50px;
+        padding-inline: 30px;
+        padding-bottom: 50px;
+        font-size: 28px;
+    }
+    nav li{
+        font-size: large;
+        display: inline-block;
+    }
+    nav ul{
+        list-style-type:upper-latin;
+        padding-top:10px;
+        padding-bottom:100px;
+    }
+    nav a{
+        padding: 30px;
+        text-decoration: none;
+        color: #f1ebe7;
+    }
+    .github{
+        margin-left: 600px;
+        width: 60px;
+        height: 60px;
+    }
+    .Name{
+        margin-right: 100px;
+    }
+    .Author{
+        
+        
+    }
+    body{
+        background-color: #1B1F23;
+        color: #f0f2f3;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100%;   
+    }
