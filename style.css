@@ -8,8 +8,6 @@
 
 }
 header{
-    background-color:#1b0404;
-    color: #ffffff;
 }
 nav li{
     font-size: large;
@@ -21,22 +19,17 @@ nav ul{
     padding-bottom:100px;
 }
 nav a{
-    color: rgb(202, 203, 206);
     padding: 10px;
 }
-.content ol{
-    position: absolute;
-    background-color:rgb(251, 247, 247);
-    box-shadow: 0px 0 3px #000000;
-    float: left;
-    padding: 100px;
-}
 .content{
-    float: left;
+    float: left;SS
     margin-left: 200px;
     font-size: 20px;
-    padding-top: 40px;
+    padding-top: 40px;  
 }
 body{
-    background-color:#ffffff;
+    color: #B0BFD2;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;   
 }
