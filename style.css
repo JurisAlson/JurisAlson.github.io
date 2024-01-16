@@ -1,14 +1,14 @@
 html {
     scroll-behavior: smooth;
 }
-nav  {
+nav {
     background-color: #1A1A1A;
     padding: 20px;
     text-align: center;
 }
-nav ul{
+nav ul {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
 }
 nav li {
     display: flex;
@@ -18,33 +18,12 @@ nav a {
     color: #fff;
     text-decoration: none;
     padding: 5px 10px;
-    transition: background-color 0.3s;
     background: #1A1A1A;
-    font-family: 'Poppins', sans-serif;
     font-size: 24px;
     letter-spacing: 2px;
-    transition: transform 0.3s ease-in-out; 
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
-nav a:hover {
-    transform: translateY(-5px);
-}
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction:
-        align-items: center;
-    }
-
-    nav a {
-        font-size: 16px; 
-        padding: 10px; 
-    }
-}
-@media (max-width: 480px) {
-    nav a {
-        display: none 
-    }
-}
-nav a::after {
+nav li:not(:last-child) a::after {
     content: "";
     position: absolute;
     background-color: rgb(250, 115, 115);
@@ -54,44 +33,97 @@ nav a::after {
     bottom: 0;
     margin-bottom: -10px;
     transform: translateX(-50%);
-    transition: width 0.3s;
 }
-nav a:hover::after {
+nav a:hover {
+    transform: translateY(-5px);
+    color: rgb(250, 115, 115);
+}
+nav li:not(:last-child) a:hover::after {
     width: 100%;
+    transition: width 0.5s ease-in-out;
 }
-.Home{
-    background-color:#1A1A1A;
-    color: #e7eaee;;
+nav a .red-letterContact {
+    border: solid;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: rgb(250, 115, 115);
 }
-body{
-    background-color:#1A1A1A;
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: none;
+        align-items: center;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+@media (max-width: 480px) {
+    nav a {
+        display: none;
+    }
+}
+.Home {
+    background-color: #1A1A1A;
+    color: #e7eaee;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1A1A1A;
     color: #f0f2f3;
 }
+
+
 .wrapper {
-    margin-top: 120px;
+    padding-right: 500px;
+    margin-top: 220px;
+    margin-bottom: 220px;
     margin-left: 160px;
     position: relative;
-    font-family: 'Poppins', sans-serif;
+    transition: transform 0.3s ease-in-out;
+}
+.wrapper:hover{
+    transform: translateY(-5px);
+}
+.resume{
+    position: relative;
+    opacity: 80%;
+    color: #f0f2f3;
+    letter-spacing: 5px;
+    font-size: 18px;
+    border: solid;
+    border-radius: 20px;
+    padding: 20px 20px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+
+}
+.resume:hover{
+    color: rgb(250, 115, 115);
+}
+a{
+    text-decoration: none;
 }
 
-.Juris {
-    transition: transform 0.3s ease-in-out;
+
+.Juris{
     margin-bottom: 80px;
 }
-
 .Juris h1 {
-    font-size: 68px;
+    font-size: 78px;
     margin: 0;
 }
 .Juris h1 span.red-letter {
     color: rgb(250, 115, 115);
+    content: none;
 }
-
 .Juris h5 {
+    word-spacing: 2px;
+    opacity: 50%;
     font-size: 18px;
     margin: 10px 0;
 }
-
 @media (min-width: 768px) {
     .Juris {
         font-size: 38px;
@@ -103,73 +135,100 @@ body{
     }
 }
 
-.Juris:hover {
-    transform: translateY(-5px);
-}
-.red-letter {
-    color:rgb(250, 115, 115);
-}
 
-.aboutme{
-    word-spacing: 3px;
+.aboutme {
+    font-size: 18px;
+    word-spacing: 2px;
     font-family: 'Poppins', sans-serif;
-    padding-top: 100px;
-    padding-left: 200px;
-    padding-right: 200px;
-    transition: transform 0.3s ease-in-out; 
+    padding: 200px;
+    position: relative;
 }
-.aboutme:hover{
+.aboutme h3.abtme {
+    font-size: 40px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    position: relative;
+}
+.aboutme h3.abtme:hover {
     transform: translateY(-5px);
+    color: rgb(250, 115, 115);
 }
-.abtme{  
-    display: inline;
+.abtme{
+    font-size: 18px;
 }
-.LanguagesKnownandUsed{
-    padding-top: 100px;
-    padding-left: 200px;
-    padding-right: 200px;
-    transition: transform 0.3s ease-in-out; 
-}
-.LanguagesKnownandUsed:hover{
-    transform: translateY(-5px);
-}
-.LanguagesKnownandUsed img{
-    width: 80px;
-}
-.Projects{
-    padding-top: 20px;
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-bottom: 20px;
-    transition: transform 0.3s ease-in-out; 
-}
-.Projects img{
-    justify-content: space-between;
-    text-align: right;
-    border-radius: 10px;
-    width: 60px;
-    height: 30px;
-}
-.Projects button{
 
-    border-color: #000000;
-    border-radius: 20px;
-    border-style: double;
-    
+
+.LanguagesKnownandUsed {
+    font-size: 18px;
+    word-spacing: 2px;
+    padding: 200px;
 }
-.Projects:hover{
+.LanguagesKnownandUsed .skills {
+    font-size: 40px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.LanguagesKnownandUsed .skills:hover {
+    transform: translateY(-5px);
+    color: rgb(250, 115, 115);
+}
+
+
+.project-list {
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    padding: 0;
+}
+
+.project-list h2 {
+    color: rgb(250, 115, 115);
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+}
+.project-list h2:hover{
+    text-decoration: underline;
     transform: translateY(-5px);
 }
-.Education{
+
+
+.project-list li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.project-list li:hover{
+    text-decoration: underline;
+    transform: translateY(-5px);
+}
+
+.Projectssofar {
+    font-size: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+.Projectssofar:hover {
+    transform: translateY(-5px);
+    color: rgb(250, 115, 115);
+}
+.Projects {
+    padding-top: 200px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.Education {
+    padding-top: 200px;
     padding-left: 200px;
     padding-right: 200px;
     padding-bottom: 80px;
-    transition: transform 0.3s ease-in-out; 
+    transition: transform 0.3s ease-in-out;
 }
-.Education:hover{
+.Education:hover {
     transform: translateY(-5px);
+    color: rgb(250, 115, 115);
 }
+
+
 .Contacts{
+    color:rgb(250, 115, 115);;
+    margin-top: 200px;
     text-align: center;
 }
 .contactstxt{
@@ -178,21 +237,30 @@ body{
 .contactmssg{
     text-align: center;
 }
+
 .ConnectMe {
-    padding: 60px; 
-}
-.ConnectMe ul {
     text-align: center;
 }
-.ConnectMe button{
-    display:  inline-flex;
-    height: 50px;
-    width: 100px;
-    border-radius: 80px;
-    background-color: #1A1A1A;
-    border-color: #e7eaee;
-    font-size: 24px;
+.ConnectMe ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
-.ConnectMe Button_icon{
-
+.ConnectMe li {
+    display: inline-block;
+    margin: 0 10px;
+}
+.ConnectMe button {
+    background-color: #1A1A1A;
+    color: rgb(250, 115, 115);
+    border: solid;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.ConnectMe button:hover {
+    background-color: rgb(250, 115, 115);
+    color: #1A1A1A;
 }
