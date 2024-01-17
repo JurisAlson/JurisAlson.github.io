@@ -218,11 +218,9 @@ a{
     padding-left: 200px;
     padding-right: 200px;
     padding-bottom: 80px;
-    transition: transform 0.3s ease-in-out;
 }
 .Education:hover {
-    transform: translateY(-5px);
-    color: rgb(250, 115, 115);
+
 }
 
 
@@ -232,6 +230,7 @@ a{
     text-align: center;
 }
 .contactstxt{
+    font-size: 26px;
     text-align: center;   
 }
 .contactmssg{
@@ -239,12 +238,11 @@ a{
 }
 
 .ConnectMe {
+    font: size 26px;
     text-align: center;
-}
-.ConnectMe ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    display: flex;
+    justify-content: space-around;
+
 }
 .ConnectMe li {
     display: inline-block;
