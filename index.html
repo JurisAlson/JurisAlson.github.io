@@ -12,14 +12,16 @@
         <header class="Home">
             <nav>
                 <ul>
+                    <li><a href="#Home">Home</a></li>
                     <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#Skills">Skills</a></li>
                     <li><a href="#Projects">Projects</a></li>
                     <li><a href="#Education">Education</a></li>
                     <li><a href="#Contacts"><span class="red-letterContact">Contact</span></a></li>
                 </ul>
             </nav>
 
-            <div class="wrapper"> 
+            <div class="wrapper" id="Home"> 
                 <div class="Juris">
                     <h1>Hi,</h1> 
                     <h1>I'm  <span class="red-letter">Juris,<br>MMCL Student.</span></h1>
@@ -50,7 +52,7 @@
             </p>
         </div>
 
-        <div class="LanguagesKnownandUsed">
+        <div class="LanguagesKnownandUsed" id="Skills">
             <h3 class="skills">Skills& <br>Experience</h3>
             <p> I am a second-year student working towards a Bachelor of Information Technology. <br>
                 <br>
@@ -103,58 +105,63 @@
                 <hr>
 
             </ul>
-
         </div>
 
         <div class="Education" id="Education">
             <h3 class="Edu">Education</h3>
             <ul>
-                <li>
-                    University of Perpetual Help System Dalta Campus
+                <li class="uphds">
+                    <h2>University of Perpetual Help System Dalta Campus</h2>
                     <ul>
                         <br>
-                        <li>Senior Highschool Humanities and Social Sciences (2022)</li>
                         <li>Highscool Graduate (2020)</li>
+                        <li>Senior Highschool Humanities and Social Sciences (2022)</li>
                     </ul>
-
                 </li>
 
                     <br>
-                     <li>Mapua Malayan Colleges Laguna
-                        
+                     <li class="mcl"><h2>Mapua Malayan Colleges Laguna</h2>
                         <ul>
                             <br>
                             <li>Batch 2021</li>
-                            <li>2nd-Year Student in Bachelor of Science in Information Technology</li>
+                            <li>2nd-Year Student in Bachelor of Science in Information Technology (2021 - Present)</li>
                             <hr>
                         </ul>
-
                      </li>
             </ul>
         </div>
     
-        
         <div class="Contacts" id="Contacts">
             <h3>Contact</h3>           
         </div>
 
         <div class="contactstxt">
-            <h2>Let's Build Something Together</h2>
-        </div>
-
-        <div class="contactmssg">
-            <p>Feel free to reach out if you have a question, or just want to connect.</p>
+            <h2>Let's Build Something Together <br> <span class="contactmssg">Feel free to reach out if you have a question, or just want to connect.</span></h2>
         </div>
 
         <div class="Connect">
-            <nav class="ConnectMe">
-           
-                    <button><a href=""></a>Github</button>
-                    <button><a href=""></a>Instagram</button>
-                    <button><a href=""></a>Gmail</button>
+                    <button>
+                        <a href="https://github.com/JurisAlson"></a>
+                        <span class="button__icon"><ion-icon name="logo-github"></ion-icon></span>
+                        <span class="button__text">Github</span>
+                        
+                    </button>
+                    <button>
+                        <a href=""></a>
+                        <span class="button__icon"><ion-icon name="logo-instagram"></ion-icon></span>
+                        <span class="button__text">Instagram</span>
+                    </button>
+                    <button>
+                        <a href=""></a>
+                        <span class="button__icon"><ion-icon name="logo-google"></ion-icon></span>
+                        <span class="button__text">Gmail</span>
 
-            </nav>
+                    </button>
         </div>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 
     </body>
 
