@@ -303,3 +303,82 @@ a{
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
     color: rgb(250, 115, 115);
 }
+
+
+/* Phone*/
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction:row; 
+        align-items: center;
+    }
+
+    nav li {
+        margin-bottom: 10px; 
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .wrapper {
+        padding: 20px; 
+        margin: 20px; 
+    }
+
+    .resume {
+        font-size: 16px; 
+        padding: 10px; 
+    }
+
+    .aboutme,
+    .LanguagesKnownandUsed,
+    .Projects,
+    .Education,
+    .Connect {
+        padding: 20px; 
+    }
+
+    .Juris h1 {
+        font-size: 36px; 
+    }
+
+    .Juris h5 {
+        font-size: 16px; 
+    }
+
+    .abtme {
+        font-size: 16px; 
+    }
+
+    .skills,
+    .Projectssofar,
+    .Edu {
+        font-size: 28px; 
+    }
+
+    .project-list h2,
+    .project-list li {
+        font-size: 16px; 
+    }
+
+    .contactstxt {
+        font-size: 20px; 
+    }
+
+    .contactmssg {
+        font-size: 14px; 
+    }
+
+    .Connect button {
+        font-size: 20px; 
+        padding: 8px 16px; 
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        display: none;
+    }
+}
